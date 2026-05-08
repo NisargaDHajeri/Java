@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #121212, #1db954);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Glass Card */
+.container {
+    width: 380px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    text-align: center;
+    color: white;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Logo */
+.logo {
+    color: #1db954;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: #1e1e1e;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border: 1px solid #1db954;
+    box-shadow: 0 0 8px #1db954;
+    background: #111;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 30px;
+    background: #1db954;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #1db954;
+}
+
+/* Button Hover */
+button:hover {
+    background: #1ed760;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #1ed760;
+}
+
+/* Links */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #1db954;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1ed760;
+}
+
+/* Switch text */
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
